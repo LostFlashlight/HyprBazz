@@ -21,21 +21,15 @@ modules:
     repos:
       copr:
         - atim/starship
-      files:
-        - rpmfusion-nonfree.repo
-      #  - https://negativo17.org/repos/fedora-steam.repo
+      nonfree: negativo17
+
     install:
       packages:
-        #- micro
-        #- starship
-
         # utils
         - neovim
         - syncthing
         - onedrive
 
-        # steam
-        #- https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-43.noarch.rpm
         - steam
         - gamescope
         - mangohud
