@@ -1,3 +1,7 @@
+# HyprBazz
+this is mainly just the normal wayblue hyprland image with some tweaks making it better for me and stealling some stuff from Bazzite
+
+If you really want to use this for whatever reason, the install instructions should work, but please look at the recipe first.
 # BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
@@ -13,7 +17,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/LostFlashlight/HyprBazz:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/lostflashlight/hyprbazz:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +25,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/LostFlashlight/HyprBazz:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/lostflashlight/hyprbazz:latest
   ```
 - Reboot again to complete the installation
   ```
