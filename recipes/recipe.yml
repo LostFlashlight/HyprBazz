@@ -35,7 +35,7 @@ modules:
         - onedrive
 
         # steam
-        - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-43.noarch.rpm
+        #- https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-43.noarch.rpm
         - steam
         - gamescope
         - mangohud
