@@ -29,7 +29,7 @@ modules:
         - neovim
 
         # steam
-        - steam
+        #- steam
         - gamescope
         - mangohud
     #remove:
