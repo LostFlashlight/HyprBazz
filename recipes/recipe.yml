@@ -34,7 +34,7 @@ modules:
         - onedrive
 
         # steam
-        - steam
+        #- steam
         - gamescope
         - mangohud
     #remove:
