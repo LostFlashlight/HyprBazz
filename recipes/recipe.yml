@@ -32,11 +32,11 @@ modules:
         - steam
         - gamescope
         - mangohud
-    remove:
-      packages:
-        # example: removing firefox (in favor of the flatpak)
-        - firefox # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox-langpacks
+    #remove:
+    #packages:
+    # example: removing firefox (in favor of the flatpak)
+    #- firefox # "firefox" is the main package, "firefox-langpacks" is a dependency
+    #- firefox-langpacks
 
   - type: default-flatpaks
     configurations:
@@ -47,6 +47,7 @@ modules:
           - io.gitlab.librewolf-community
           - org.signal.Signal
           - org.onlyoffice.desktopeditors
+          - io.github.kolunmi.Bazaar
 
       - scope: user # Also add Flathub user repo, but no user packages
 
