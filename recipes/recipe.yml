@@ -19,6 +19,7 @@ modules:
   - type: dnf
     repos:
       copr:
+        - atim/starship
         - tofik/nwg-shell
       nonfree: negativo17
 
@@ -29,16 +30,17 @@ modules:
         - syncthing
         - onedrive
         - filelight
+        - starship
         ## nwg-shell
-        - nwg-shell
-        - nwg-shell-config
-        - nwg-clipman
-        - nwg-displays
-        - nwg-dock
-        - nwg-drawer
-        - nwg-icon-picker
-        - nwg-look
-        - nwg-menu
+        #- nwg-shell
+        #- nwg-shell-config
+        #- nwg-clipman
+        #- nwg-displays
+        #- nwg-dock
+        #- nwg-drawer
+        #- nwg-icon-picker
+        #- nwg-look
+        #- nwg-menu
 
         - steam
         - gamescope
