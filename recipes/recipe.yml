@@ -1,4 +1,3 @@
----
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
 name: HyprBazz
@@ -20,7 +19,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
+        - tofik/nwg-shell
       nonfree: negativo17
 
     install:
@@ -29,15 +28,26 @@ modules:
         - neovim
         - syncthing
         - onedrive
+        - filelight
+        ## nwg-shell
+        - nwg-shell
+        - nwg-shell-config
+        - nwg-clipman
+        - nwg-displays
+        - nwg-dock
+        - nwg-drawer
+        - nwg-icon-picker
+        - nwg-look
+        - nwg-menu
 
         - steam
         - gamescope
         - mangohud
-    #remove:
-    #packages:
-    # example: removing firefox (in favor of the flatpak)
-    #- firefox # "firefox" is the main package, "firefox-langpacks" is a dependency
-    #- firefox-langpacks
+    remove:
+      packages:
+        # example: removing firefox (in favor of the flatpak)
+        - firefox # "firefox" is the main package, "firefox-langpacks" is a dependency
+        - firefox-langpacks
 
   - type: default-flatpaks
     configurations:
