@@ -26,6 +26,7 @@ modules:
     install:
       packages:
         # utils
+        - foot
         - neovim
         - syncthing
         - onedrive
@@ -48,6 +49,7 @@ modules:
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
+        - kitty
         - firefox # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox-langpacks
 
