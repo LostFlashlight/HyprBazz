@@ -26,6 +26,7 @@ modules:
     install:
       packages:
         # utils
+        - qt6ct
         - foot
         - neovim
         - syncthing
