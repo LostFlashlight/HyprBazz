@@ -1,4 +1,3 @@
-
 [Desktop Entry]
 Type=Application
 Exec=flatpak run io.gitlab.librewolf-community http://localhost:631/admin
@@ -7,6 +6,6 @@ Terminal=false
 Categories=System;TerminalEmulator;
 Keywords=print;CUPS;
 
-Name=Printers
+Name=CUP Webui
 GenericName=Printing
 Comment=Web UI for printer config
