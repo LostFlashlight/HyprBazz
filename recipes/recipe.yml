@@ -47,6 +47,9 @@ modules:
         - steam
         - gamescope
         - mangohud
+
+        ## dev stuff
+        - podman-compose
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
