@@ -33,6 +33,7 @@ modules:
         - onedrive
         - filelight
         - starship
+        - distrobox
         ## nwg-shell
         - nwg-shell
         - nwg-shell-config
