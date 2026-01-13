@@ -13,7 +13,7 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - type: files
     files:
-      - source: system
+      - source: systen of your recipe/configuration file.m
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
@@ -24,6 +24,9 @@ modules:
       nonfree: negativo17
 
     install:
+      ashmem:
+        base: bazzite
+
       packages:
         # utils
         - qt6ct
