@@ -79,6 +79,3 @@ modules:
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
   - type: brew
     nofile-limits: true # increase nofile limits
-  - type: script
-    snippets:
-      - "curl -f https://zed.dev/install.sh | ZED_CHANNEL=preview sh"
