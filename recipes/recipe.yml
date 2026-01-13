@@ -42,15 +42,15 @@ modules:
         - distrobox
         - waydroid
         ## nwg-shell
-        - nwg-shell
-        - nwg-shell-config
-        - nwg-clipman
+        #- nwg-shell
+        #- nwg-shell-config
+        #- nwg-clipman
         - nwg-displays
-        - nwg-dock
-        - nwg-drawer
-        - nwg-icon-picker
-        - nwg-look
-        - nwg-menu
+        #- nwg-dock
+        #- nwg-drawer
+        #- nwg-icon-picker
+        #- nwg-look
+        #- nwg-menu
 
         - steam
         - gamescope
