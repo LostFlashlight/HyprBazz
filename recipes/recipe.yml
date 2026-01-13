@@ -11,9 +11,14 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: akmods
+    base: bazzite # if not specified, classic "main" base is used by default
+    install:
+      - ashmem
+
   - type: files
     files:
-      - source: systen of your recipe/configuration file.m
+      - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
@@ -24,9 +29,6 @@ modules:
       nonfree: negativo17
 
     install:
-      ashmem:
-        base: bazzite
-
       packages:
         # utils
         - qt6ct
