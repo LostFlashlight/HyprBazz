@@ -22,7 +22,8 @@ modules:
         - atim/starship
         - tofik/nwg-shell
         - yanqiyu/waydroid
-        -  guillermodotn/cliphist
+        - guillermodotn/cliphist
+
       nonfree: negativo17
 
     install:
@@ -31,7 +32,7 @@ modules:
         - qt6ct
         - foot
         - cliphist
-        - dmenu-wayland 
+        - dmenu-wayland
         - neovim
         - syncthing
         - onedrive
@@ -79,3 +80,15 @@ modules:
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
   - type: brew
     nofile-limits: true # increase nofile limits
+  - type: script
+    snippets:
+      - |
+        #!/bin/bash
+        set -eux
+
+        # Download DevPod binary
+        curl -L -o /tmp/devpod \
+          https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64
+
+        # Install it into /usr/local/bin
+        install -m 0755 /tmp/devpod /usr/local/bin/devpod
