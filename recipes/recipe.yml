@@ -22,6 +22,7 @@ modules:
         - atim/starship
         - tofik/nwg-shell
         - yanqiyu/waydroid
+        -  guillermodotn/cliphist
       nonfree: negativo17
 
     install:
@@ -29,6 +30,8 @@ modules:
         # utils
         - qt6ct
         - foot
+        - cliphist
+        - dmenu-wayland 
         - neovim
         - syncthing
         - onedrive
