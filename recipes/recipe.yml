@@ -80,3 +80,7 @@ modules:
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
   - type: brew
     nofile-limits: true # increase nofile limits
+
+  - type: script
+    snippets:
+      - curl -L -o devpod "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64" && install -c -m 0755 devpod /usr/local/bin && rm -f devpod
