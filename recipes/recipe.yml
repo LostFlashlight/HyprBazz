@@ -45,10 +45,10 @@ modules:
         #- nwg-shell-config
         #- nwg-clipman
         - nwg-displays
+        - nwg-look
         #- nwg-dock
         #- nwg-drawer
         #- nwg-icon-picker
-        #- nwg-look
         #- nwg-menu
 
         - steam
