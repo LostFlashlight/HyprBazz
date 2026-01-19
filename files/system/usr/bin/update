@@ -1,4 +1,5 @@
 #!/bin/sh
-
 rpm-ostree update
 flatpak update -y
+
+#command to make git check something changed
