@@ -28,6 +28,11 @@ modules:
 
     install:
       packages:
+        # hpyrpm requirements
+        ## c++ build chane for some reason I guess
+        - gcc-c++
+        - meson
+        - cmake
         # utils
         - qt6ct
         - foot
