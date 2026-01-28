@@ -24,6 +24,9 @@ modules:
         - yanqiyu/waydroid
         - guillermodotn/cliphist
 
+      files:
+        - vscodium.repo
+
       nonfree: negativo17
 
     install:
@@ -62,6 +65,7 @@ modules:
 
         ## dev stuff
         - podman-compose
+        - codium
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
