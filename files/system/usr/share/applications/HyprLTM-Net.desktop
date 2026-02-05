@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=HyprLTM-Net
+Comment=Hyprland Network Manager
+Exec=/bin/hyprltm-net
+Icon=hyprltm-net
+Terminal=false
+Type=Application
+Categories=Network;System;
+Keywords=network;manager;wi-fi;wireless;
