@@ -41,6 +41,7 @@ modules:
         - foot
         - cliphist
         - dmenu-wayland
+        - hyprland-devel
         - neovim
         - syncthing
         - onedrive
