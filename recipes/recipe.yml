@@ -76,8 +76,14 @@ modules:
 
   - type: default-flatpaks
     configurations:
+      - scope: user
+        repo:
+        # you can override the title to make inclusion of both system and user repos clearer
+        title: Flathub (user)
       - notify: true # Send notification after install/uninstall is finished (true/false)
         scope: system
+        repo:
+        title: Flathub (system)
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - io.gitlab.librewolf-community
@@ -85,11 +91,8 @@ modules:
           - org.onlyoffice.desktopeditors
           - io.github.kolunmi.Bazaar
 
-      - scope: user # Also add Flathub user repo, but no user packages
-
-  - type: signing # this sets up the proper policy & signing files for signed images to work fully
-  - type: brew
-    nofile-limits: true # increase nofile limits
+  #- type: brew
+  #  nofile-limits: true # increase nofile limits
 
   - type: script
     snippets:
@@ -99,3 +102,5 @@ modules:
       - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
       # hyprspce (Workspaces)
       #- hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
