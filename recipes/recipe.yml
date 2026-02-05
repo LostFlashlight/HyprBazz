@@ -78,12 +78,12 @@ modules:
     configurations:
       - scope: user
         repo:
-        # you can override the title to make inclusion of both system and user repos clearer
-        title: Flathub (user)
+          # you can override the title to make inclusion of both system and user repos clearer
+          title: Flathub (user)
       - notify: true # Send notification after install/uninstall is finished (true/false)
         scope: system
         repo:
-        title: Flathub (system)
+          title: Flathub (system)
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - io.gitlab.librewolf-community
