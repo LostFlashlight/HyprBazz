@@ -26,6 +26,7 @@ modules:
 
       files:
         - vscodium.repo
+        - https://download.docker.com/linux/fedora/docker-ce.repo
 
       nonfree: negativo17
 
@@ -68,6 +69,12 @@ modules:
         ## dev stuff
         - podman-compose
         - codium
+        ### docker
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -99,9 +106,21 @@ modules:
     snippets:
       - curl -L -o devpod "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64" && install -c -m 0755 devpod /usr/local/bin && rm -f devpod
       - chmod a+x /bin/update
+      - chmod a+x /bin/hyprltm-net
       - systemctl --global enable ssh-agent
+      - sudo systemctl enable --now docker
   # - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
   # hyprspce (Workspaces)
   #- hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
+  - type: systemd
+    # this example disables automatic flatpak updates and enables a custom service unit for all users
+    system:
+      disabled:
+        - flatpak-system-update.timer
+    user:
+      enabled:
+        - docker
+      disabled:
+        - flatpak-user-update.timer
