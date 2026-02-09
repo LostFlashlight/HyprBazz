@@ -39,6 +39,7 @@ modules:
         # utils
         - qt6ct
         - foot
+        - fish
         - cliphist
         - dmenu-wayland
         - hyprland-devel
