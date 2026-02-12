@@ -45,8 +45,8 @@ modules:
 
         # files
         - nemo
-        - nemo-terminal
         - nemo-fileroller
+        - nemo-preview
         # - cliphist ##repo is outdated
         #- dmenu-wayland
         - hyprland-devel
@@ -89,7 +89,7 @@ modules:
         - firefox # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox-langpacks
 
-        - thunar # switch to nemo
+        - Thunar # switch to nemo
         - xarchiver # switch to nemo
 
   - type: default-flatpaks
