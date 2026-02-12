@@ -22,7 +22,7 @@ modules:
         - atim/starship
         - tofik/nwg-shell
         - yanqiyu/waydroid
-        - guillermodotn/cliphist
+        # - guillermodotn/cliphist #repo is outdated
 
       files:
         - vscodium.repo
@@ -41,7 +41,8 @@ modules:
         - qt6ct
         - foot
         - fish
-        - cliphist
+        - copyq #replacement for cliphist
+        # - cliphist ##repo is outdated
         - dmenu-wayland
         - hyprland-devel
         - neovim
@@ -50,7 +51,8 @@ modules:
         - filelight
         - starship
         - distrobox
-        - waydroid
+        #- waydroid
+        - xfce4-settings
         ## nwg-shell
         #- nwg-shell
         #- nwg-shell-config
