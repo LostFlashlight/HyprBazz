@@ -41,9 +41,9 @@ modules:
         - qt6ct
         - foot
         - fish
-        - copyq #replacement for cliphist
+        - clipman
         # - cliphist ##repo is outdated
-        - dmenu-wayland
+        #- dmenu-wayland
         - hyprland-devel
         - neovim
         - syncthing
