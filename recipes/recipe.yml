@@ -115,6 +115,7 @@ modules:
   - type: script
     snippets:
       - curl -L -o devpod "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64" && install -c -m 0755 devpod /usr/local/bin && rm -f devpod
+      - wget -qO- https://apx.vanillaos.org/install.sh | bash
       - chmod a+x /bin/update
       - chmod a+x /bin/hyprltm-net
       - systemctl --global enable ssh-agent
