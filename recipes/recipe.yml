@@ -27,6 +27,7 @@ modules:
       files:
         - vscodium.repo
         - https://download.docker.com/linux/fedora/docker-ce.repo
+        - https://github.com/TibixDev/winboat/releases/download/v0.9.0/winboat-0.9.0-x86_64.rpm
 
       nonfree: negativo17
 
@@ -82,6 +83,7 @@ modules:
         - containerd.io
         - docker-buildx-plugin
         - docker-compose-plugin
+        - freerdp
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -115,7 +117,7 @@ modules:
   - type: script
     snippets:
       - curl -L -o devpod "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64" && install -c -m 0755 devpod /usr/local/bin && rm -f devpod
-      - wget -qO- https://apx.vanillaos.org/install.sh | bash
+      #- wget -qO- https://apx.vanillaos.org/install.sh | bash
       - chmod a+x /bin/update
       - chmod a+x /bin/hyprltm-net
       - systemctl --global enable ssh-agent
