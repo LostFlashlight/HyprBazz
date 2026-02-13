@@ -27,7 +27,7 @@ modules:
       files:
         - vscodium.repo
         - https://download.docker.com/linux/fedora/docker-ce.repo
-        - https://github.com/TibixDev/winboat/releases/download/v0.9.0/winboat-0.9.0-x86_64.rpm
+        #- https://github.com/TibixDev/winboat/releases/download/v0.9.0/winboat-0.9.0-x86_64.rpm
 
       nonfree: negativo17
 
@@ -122,6 +122,8 @@ modules:
       - chmod a+x /bin/hyprltm-net
       - systemctl --global enable ssh-agent
       - systemctl enable --now docker
+      - curl -s https://api.github.com/repos/TibixDev/winboat/releases/latest | grep browser_download_url | grep AppImage | cut -d '"' -f 4 | wget -P /usr/bin && chomd a+x /usr/bin/winboat**
+
   # - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
   # hyprspce (Workspaces)
   #- hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
