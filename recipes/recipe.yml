@@ -108,7 +108,6 @@ modules:
 
   - type: script
     snippets:
-      - curl -L -o devpod "https://github.com/loft-sh/devpod/releases/latest/download/devpod-linux-amd64" && install -c -m 0755 devpod /usr/local/bin && rm -f devpod
       #- wget -qO- https://apx.vanillaos.org/install.sh | bash
       - chmod a+x /bin/update
       - chmod a+x /bin/hyprltm-net
@@ -117,6 +116,7 @@ modules:
       #- curl -s https://api.github.com/repos/TibixDev/winboat/releases/latest | grep browser_download_url | grep AppImage | cut -d '"' -f 4 | wget -P /usr/bin && chomd a+x /usr/bin/winboat**
     scripts:
       - get_clipvault.sh
+      - get_devpod.sh
 
   # - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
   # hyprspce (Workspaces)
