@@ -19,9 +19,9 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
+        #- atim/starship
         - tofik/nwg-shell
-        - yanqiyu/waydroid
+        #- yanqiyu/waydroid
         # - guillermodotn/cliphist #repo is outdated
 
       files:
@@ -56,10 +56,10 @@ modules:
         - syncthing
         - onedrive
         - filelight
-        - starship
+        #- starship
         - distrobox
         #- waydroid
-        - xfce4-settings
+        #- xfce4-settings
         ## nwg-shell
         #- nwg-shell
         #- nwg-shell-config
