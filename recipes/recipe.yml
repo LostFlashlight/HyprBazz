@@ -20,6 +20,7 @@ modules:
     repos:
       copr:
         #- atim/starship
+        - azandure/clipse
         - tofik/nwg-shell
         #- yanqiyu/waydroid
         # - guillermodotn/cliphist #repo is outdated
@@ -33,25 +34,11 @@ modules:
 
     install:
       packages:
-        # hpyrpm requirements
-        ## c++ build chane for some reason I guess
-        - gcc-c++
-        - meson
-        - cmake
         # utils
         - qt6ct
         - foot
-        - fish
-        - clipman
-
         # files
         - dolphin
-        #- pcmanfm
-        #- nemo
-        #- nemo-fileroller
-        #- nemo-preview
-        ## - cliphist ##repo is outdated
-        #- dmenu-wayland
         - hyprland-devel
         - neovim
         - syncthing
@@ -128,6 +115,8 @@ modules:
       - systemctl --global enable ssh-agent
       - systemctl enable --now docker
       #- curl -s https://api.github.com/repos/TibixDev/winboat/releases/latest | grep browser_download_url | grep AppImage | cut -d '"' -f 4 | wget -P /usr/bin && chomd a+x /usr/bin/winboat**
+    scripts:
+      - get_clipvault.sh
 
   # - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
   # hyprspce (Workspaces)
