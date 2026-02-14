@@ -28,7 +28,7 @@ modules:
         - vscodium.repo
         - https://download.docker.com/linux/fedora/docker-ce.repo
 
-      nonfree: rpmfusion
+      nonfree: negativo17 #dont go rpm-fusion it kills everything
       cleanup: true
 
     install:
@@ -46,10 +46,10 @@ modules:
 
         # files
         - pcmanfm
-        - nemo
-        - nemo-fileroller
-        - nemo-preview
-        # - cliphist ##repo is outdated
+        #- nemo
+        #- nemo-fileroller
+        #- nemo-preview
+        ## - cliphist ##repo is outdated
         #- dmenu-wayland
         - hyprland-devel
         - neovim
