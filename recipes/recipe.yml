@@ -28,7 +28,8 @@ modules:
         - vscodium.repo
         - https://download.docker.com/linux/fedora/docker-ce.repo
 
-      nonfree: negativo17
+      nonfree: rpmfusion
+      cleanup: true
 
     install:
       packages:
@@ -44,6 +45,7 @@ modules:
         - clipman
 
         # files
+        - pcmanfm
         - nemo
         - nemo-fileroller
         - nemo-preview
