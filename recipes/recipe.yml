@@ -38,7 +38,7 @@ modules:
         - qt6ct
         - foot
         # files
-        - dolphin
+        - ranger
         - hyprland-devel
         - neovim
         - syncthing
@@ -79,11 +79,11 @@ modules:
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
-        - kitty
+        #- kitty
         - firefox # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox-langpacks
 
-        - Thunar # switch to nemo
+        # Thunar # switch to nemo
         #- xarchiver # switch to nemo
 
   - type: default-flatpaks
