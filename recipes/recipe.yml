@@ -45,7 +45,8 @@ modules:
         - clipman
 
         # files
-        - pcmanfm
+        - dolphin
+        #- pcmanfm
         #- nemo
         #- nemo-fileroller
         #- nemo-preview
@@ -96,7 +97,7 @@ modules:
         - firefox-langpacks
 
         - Thunar # switch to nemo
-        - xarchiver # switch to nemo
+        #- xarchiver # switch to nemo
 
   - type: default-flatpaks
     configurations:
