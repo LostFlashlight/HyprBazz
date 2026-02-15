@@ -74,8 +74,10 @@ modules:
         - docker-compose-plugin
 
         # winboat
-        - freerdp
-        - https://github.com/TibixDev/winboat/releases/download/v0.9.0/winboat-0.9.0-x86_64.rpm
+        #- freerdp
+        #- https://github.com/TibixDev/winboat/releases/download/v0.9.0/winboat-0.9.0-x86_64.rpm
+        - wine
+        - playonlinux
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
