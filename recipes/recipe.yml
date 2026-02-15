@@ -22,7 +22,8 @@ modules:
         #- atim/starship
         - azandure/clipse
         - tofik/nwg-shell
-        - lacamar/wine-arm64ec # 32bit wine compatibility for ms-office
+        #- name: lacamar/wine-arm64ec # 32bit wine compatibility for ms-office
+        #  chroot: fedora-43-aarch64
         #- yanqiyu/waydroid
         # - guillermodotn/cliphist #repo is outdated
 
@@ -78,6 +79,8 @@ modules:
         #- freerdp
         #- https://github.com/TibixDev/winboat/releases/download/v0.9.0/winboat-0.9.0-x86_64.rpm
         - wine
+        - wine-common
+
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
