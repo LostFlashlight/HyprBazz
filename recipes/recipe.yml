@@ -22,6 +22,7 @@ modules:
         #- atim/starship
         - azandure/clipse
         - tofik/nwg-shell
+        - sneexy/zen-browser
         #- name: lacamar/wine-arm64ec # 32bit wine compatibility for ms-office
         #  chroot: fedora-43-aarch64
         #- yanqiyu/waydroid
@@ -83,6 +84,10 @@ modules:
         - wine
         - winetricks
 
+        # just default programms
+        - zen-browser
+        - keepassxc
+
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -105,7 +110,7 @@ modules:
           title: Flathub (system)
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - io.gitlab.librewolf-community
+          #- io.gitlab.librewolf-community
           - org.signal.Signal
           - org.onlyoffice.desktopeditors
           - io.github.kolunmi.Bazaar
