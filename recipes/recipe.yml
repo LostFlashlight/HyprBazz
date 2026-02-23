@@ -129,6 +129,7 @@ modules:
     scripts:
       - get_clipvault.sh
       - get_devpod.sh
+      - get_hyprshot.sh
 
   # - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
   # hyprspce (Workspaces)
