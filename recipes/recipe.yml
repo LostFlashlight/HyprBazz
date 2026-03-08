@@ -23,6 +23,7 @@ modules:
         - azandure/clipse
         - tofik/nwg-shell
         - sneexy/zen-browser
+        - nett00n/hyprland
         #- name: lacamar/wine-arm64ec # 32bit wine compatibility for ms-office
         #  chroot: fedora-43-aarch64
         #- yanqiyu/waydroid
@@ -38,7 +39,6 @@ modules:
     install:
       packages:
         # utils
-        - qt6ct
         - foot
         # files
         - ranger
@@ -56,11 +56,11 @@ modules:
         #- nwg-shell-config
         #- nwg-clipman
         - nwg-displays
+        # Themeing
+        ##GTK
         - nwg-look
-        #- nwg-dock
-        #- nwg-drawer
-        #- nwg-icon-picker
-        #- nwg-menu
+        ## QT
+        - qt6-qtwayland
 
         - steam
         - gamescope
@@ -129,9 +129,9 @@ modules:
     scripts:
       - get_clipvault.sh
       - get_devpod.sh
-      - get_hyprshot.sh
+      ## replaced by copr
+      #- get_hyprshot.sh   # - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
 
-  # - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
   # hyprspce (Workspaces)
   #- hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
 
