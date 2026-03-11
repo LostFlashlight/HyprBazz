@@ -61,6 +61,7 @@ modules:
         - nwg-look
         ## QT
         - qt6-qtwayland
+        - qt5-qtwayland
         - hyprqt6engine
         - kvantum
 
