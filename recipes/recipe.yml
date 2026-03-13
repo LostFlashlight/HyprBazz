@@ -43,6 +43,7 @@ modules:
         # files
         - ranger
         - hyprland-devel
+        - hyprshot
         - neovim
         - syncthing
         - onedrive
