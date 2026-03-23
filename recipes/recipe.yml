@@ -38,6 +38,8 @@ modules:
 
     install:
       packages:
+        # basic functionnallity **dont remove**
+        - polkit-gnome
         # utils
         - foot
         # files
