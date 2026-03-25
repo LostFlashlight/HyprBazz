@@ -40,7 +40,7 @@ modules:
     install:
       packages:
         # basic functionnallity **dont remove**
-        - polkit-gnome
+        - polkit-kde
         # utils
         - foot
         # files
