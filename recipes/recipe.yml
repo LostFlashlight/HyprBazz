@@ -123,9 +123,9 @@ modules:
           - org.onlyoffice.desktopeditors
           - io.github.kolunmi.Bazaar
 
-          - runtime/org.kde.KStyle.Kvantum/x86_64/6.10
-          - runtime/org.kde.KStyle.Kvantum/x86_64/6.9
-          - runtime/org.kde.KStyle.Kvantum/x86_64/5.15-24.08
+          - org.kde.KStyle.Kvantum/x86_64/6.10
+          - org.kde.KStyle.Kvantum/x86_64/6.9
+          - org.kde.KStyle.Kvantum/x86_64/5.15-24.08
 
   #- type: brew
   #  nofile-limits: true # increase nofile limits
