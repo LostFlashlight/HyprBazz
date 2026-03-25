@@ -23,7 +23,8 @@ modules:
         - azandure/clipse
         - tofik/nwg-shell
         - sneexy/zen-browser
-        - nett00n/hyprland
+        #- nett00n/hyprland # cant use because upstream is using solopasha/hyprland
+
         #- name: lacamar/wine-arm64ec # 32bit wine compatibility for ms-office
         #  chroot: fedora-43-aarch64
         #- yanqiyu/waydroid
@@ -38,6 +39,8 @@ modules:
 
     install:
       packages:
+        # basic functionnallity **dont remove**
+        - polkit-kde
         # utils
         - foot
         # files
@@ -119,6 +122,10 @@ modules:
           - org.signal.Signal
           - org.onlyoffice.desktopeditors
           - io.github.kolunmi.Bazaar
+
+          - org.kde.KStyle.Kvantum/x86_64/6.10
+          - org.kde.KStyle.Kvantum/x86_64/6.9
+          - org.kde.KStyle.Kvantum/x86_64/5.15-24.08
 
   #- type: brew
   #  nofile-limits: true # increase nofile limits
