@@ -23,7 +23,8 @@ modules:
         - azandure/clipse
         - tofik/nwg-shell
         - sneexy/zen-browser
-        - nett00n/hyprland
+        #- nett00n/hyprland # cant use because upstream is using solopasha/hyprland
+
         #- name: lacamar/wine-arm64ec # 32bit wine compatibility for ms-office
         #  chroot: fedora-43-aarch64
         #- yanqiyu/waydroid
