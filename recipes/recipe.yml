@@ -31,7 +31,7 @@ modules:
 
       files:
         - vscodium.repo
-        - https://download.docker.com/linux/fedora/docker-ce.repo
+        - docker-ce.repo
 
       nonfree: negativo17 #dont go rpm-fusion it kills everything
       cleanup: true
