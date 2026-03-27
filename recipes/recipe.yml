@@ -143,6 +143,11 @@ modules:
       - get_devpod.sh
       ## replaced by copr
       #- get_hyprshot.sh   # - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
+  - type: systemd
+    # this example disables automatic flatpak updates and enables a custom service unit for all users
+    user:
+      enabled:
+        - plasma-polkit-agent.service
 
   # hyprspce (Workspaces)
   #- hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
