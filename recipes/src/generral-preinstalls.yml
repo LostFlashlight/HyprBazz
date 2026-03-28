@@ -1,0 +1,50 @@
+modules:
+  - type: default-flatpaks
+    configurations:
+      - scope: user
+        repo:
+          # you can override the title to make inclusion of both system and user repos clearer
+          title: Flathub (user)
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        repo:
+          title: Flathub (system)
+        # If no repo information is specified, Flathub will be used by default
+        install: # system flatpaks we want all users to have and not remove
+          #- io.gitlab.librewolf-community
+          - org.signal.Signal
+          - org.onlyoffice.desktopeditors
+          - io.github.kolunmi.Bazaar
+
+          - org.kde.KStyle.Kvantum/x86_64/6.10
+          - org.kde.KStyle.Kvantum/x86_64/6.9
+          - org.kde.KStyle.Kvantum/x86_64/5.15-24.08
+
+  - type: dnf
+    repos:
+      copr:
+        - sneexy/zen-browser
+    install:
+      packages:
+        - syncthing
+        - onedrive
+        - filelight
+
+        # winboat
+        - freerdp
+        - python3-pip
+        - https://github.com/TibixDev/winboat/releases/download/v0.9.0/winboat-0.9.0-x86_64.rpm
+
+        - wine
+        - winetricks
+
+        # just default programms
+        - zen-browser
+        - keepassxc
+
+    remove:
+      packages:
+        # example: removing firefox (in favor of the flatpak)
+        #- kitty
+        - firefox # "firefox" is the main package, "firefox-langpacks" is a dependency
+        - firefox-langpacks

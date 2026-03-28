@@ -1,0 +1,26 @@
+modules:
+  - type: dnf
+    repos:
+      files:
+        - vscodium.repo
+        - docker-ce.repo
+    install:
+      packages:
+        - neovim
+
+        - podman-compose
+        - codium
+
+        - distrobox
+        ### docker
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
+        -
+        -
+
+  - type: script
+    snippets:
+      - systemctl enable --now docker

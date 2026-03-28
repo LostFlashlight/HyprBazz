@@ -17,6 +17,7 @@ modules:
     install:
       packages:
         - hyprland-guiutils
+        - hyprshot
     remove:
       packages:
         - hyprland-qtutils
