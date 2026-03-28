@@ -10,7 +10,7 @@ modules:
         - podman-compose
         - codium
         - distrobox
-        - rust-gitui
+        - gitui
 
         ### docker
         - docker-ce
