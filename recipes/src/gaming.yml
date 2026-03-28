@@ -1,0 +1,142 @@
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: dnf
+    repos:
+      copr:
+        #- atim/starship
+        - azandure/clipse
+        - tofik/nwg-shell
+        - sneexy/zen-browser
+        #- nett00n/hyprland # cant use because upstream is using solopasha/hyprland
+
+        #- name: lacamar/wine-arm64ec # 32bit wine compatibility for ms-office
+        #  chroot: fedora-43-aarch64
+        #- yanqiyu/waydroid
+        # - guillermodotn/cliphist #repo is outdated
+
+      files:
+        - vscodium.repo
+        - docker-ce.repo
+
+      nonfree: negativo17 #dont go rpm-fusion it kills everything
+      cleanup: true
+
+    install:
+      packages:
+        # basic functionnallity **dont remove**
+        - polkit-kde
+        # utils
+        - foot
+        # files
+        - ranger
+        - nautilus
+        - hyprshot
+        - neovim
+        - syncthing
+        - onedrive
+        - filelight
+        #- starship
+        - distrobox
+        #- waydroid
+        #- xfce4-settings
+        ## nwg-shell
+        #- nwg-shell
+        #- nwg-shell-config
+        #- nwg-clipman
+        - nwg-displays
+        # Themeing
+        ##GTK
+        - nwg-look
+        ## QT
+        - qt6-qtwayland
+        - qt5-qtwayland
+        - hyprqt6engine
+        - kvantum
+
+        - steam
+        - gamescope
+        - mangohud
+
+        ## dev stuff
+        - podman-compose
+        - codium
+        ### docker
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
+
+        # winboat
+        - freerdp
+        - python3-pip
+        - https://github.com/TibixDev/winboat/releases/download/v0.9.0/winboat-0.9.0-x86_64.rpm
+
+        - wine
+        - winetricks
+
+        # just default programms
+        - zen-browser
+        - keepassxc
+
+    remove:
+      packages:
+        # example: removing firefox (in favor of the flatpak)
+        #- kitty
+        - firefox # "firefox" is the main package, "firefox-langpacks" is a dependency
+        - firefox-langpacks
+
+        # Thunar # switch to nemo
+        #- xarchiver # switch to nemo
+
+  - type: default-flatpaks
+    configurations:
+      - scope: user
+        repo:
+          # you can override the title to make inclusion of both system and user repos clearer
+          title: Flathub (user)
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        repo:
+          title: Flathub (system)
+        # If no repo information is specified, Flathub will be used by default
+        install: # system flatpaks we want all users to have and not remove
+          #- io.gitlab.librewolf-community
+          - org.signal.Signal
+          - org.onlyoffice.desktopeditors
+          - io.github.kolunmi.Bazaar
+
+          - org.kde.KStyle.Kvantum/x86_64/6.10
+          - org.kde.KStyle.Kvantum/x86_64/6.9
+          - org.kde.KStyle.Kvantum/x86_64/5.15-24.08
+
+  #- type: brew
+  #  nofile-limits: true # increase nofile limits
+
+  - type: script
+    snippets:
+      #- wget -qO- https://apx.vanillaos.org/install.sh | bash
+      - chmod a+x /bin/update
+      - chmod a+x /bin/hyprltm-net
+      - systemctl --global enable ssh-agent
+      - systemctl enable --now docker
+      #- curl -s https://api.github.com/repos/TibixDev/winboat/releases/latest | grep browser_download_url | grep AppImage | cut -d '"' -f 4 | wget -P /usr/bin && chomd a+x /usr/bin/winboat**
+    scripts:
+      - get_clipvault.sh
+      - get_devpod.sh
+      ## replaced by copr
+      #- get_hyprshot.sh   # - hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
+  - type: systemd
+    # this example disables automatic flatpak updates and enables a custom service unit for all users
+    user:
+      enabled:
+        - plasma-polkit-agent.service
+
+  # hyprspce (Workspaces)
+  #- hyprpm add https://github.com/KZDKM/Hyprspace && hyprpm enable Hyprspace
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-stage-list-v1.json
+
+modules:
+  - type: dnf
+    replace:
+      - from-repo: copr:copr.fedorainfracloud.org:nett00n:hyprland
+        packages:
+          - waybar
+          - xdg-desktop-portal-hyprland
+          - hyprpaper
+          - hyprlock
+          - hypridle
+    repos:
+      copr:
+        enable:
+          - nett00n/hyprland
+    install:
+      packages:
+        - hyprland-guiutils
+    remove:
+      packages:
+        - hyprland-qtutils
