@@ -1,0 +1,27 @@
+modules:
+  - type: dnf
+    repos:
+      copr:
+        enable:
+          - nett00n/hyprland
+    install:
+      install-weak-deps: false
+      packages:
+        - kitty
+        - hyprland
+        - waybar
+        - xdg-desktop-portal-hyprland
+        - hyprpaper
+        - hyprlock
+        - hypridle
+        - hyprland-guiutils # replacemanet for qtutils
+
+  - type: files
+    files:
+      - source: system/hyprland
+        destination: /
+
+  - type: script
+    scripts:
+      - https://github.com/wayblueorg/wayblue/blob/live/files/scripts/removeunprofessionalwallpapers.sh
+      - https://github.com/wayblueorg/wayblue/blob/live/files/scripts/sethyprlandwaybarmodules.sh
