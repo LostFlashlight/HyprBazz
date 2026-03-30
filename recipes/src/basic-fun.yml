@@ -11,6 +11,12 @@ modules:
         - nwg-displays
         - nautilus
 
+        # hypr utilities
+        - hyprpwcenter
+        - hyprshutdown
+        - hyprsysteminfo
+        - hyprland-plugins
+
         ## QT
         - qt6-qtwayland
         - qt5-qtwayland
