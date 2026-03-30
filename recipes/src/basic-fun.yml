@@ -3,9 +3,10 @@ modules:
     repos:
       copr:
         - tofik/nwg-shell
+        - nett00n/hyprland
     install:
       packages:
-        - polkit-kde
+        - hyprpolkitagent #polkit-kde
         - foot
         - nwg-displays
         - nautilus
@@ -29,4 +30,4 @@ modules:
     # this example disables automatic flatpak updates and enables a custom service unit for all users
     user:
       enabled:
-        - plasma-polkit-agent.service
+        - hyprpolkitagent.service
