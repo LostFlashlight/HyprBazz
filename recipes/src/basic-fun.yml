@@ -15,6 +15,14 @@ modules:
         - hyprpwcenter
         - hyprshutdown
         - hyprsysteminfo
+        # Plugin support
+        ## required packages
+        - cmake
+        - cpio
+        - pkg-config
+        - git
+        - g++
+        - gcc
         - hyprland-plugins
 
         ## QT
