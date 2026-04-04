@@ -22,8 +22,10 @@ modules:
 
   - type: dnf
     repos:
-      copr:
-        - sneexy/zen-browser
+      #copr:
+      #  - sneexy/zen-browser
+      files:
+        - https://repo.librewolf.net/librewolf.repo
     install:
       packages:
         - syncthing
@@ -39,7 +41,9 @@ modules:
         - winetricks
 
         # just default programms
-        - zen-browser
+        #- zen-browser
+        - librewolf
+
         - keepassxc
 
     remove:
