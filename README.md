@@ -1,9 +1,8 @@
 # HyprBazz
-this is mainly just the normal wayblue hyprland image with some tweaks making it better for me and stealling some stuff from Bazzite
+A blend of Hyprlands productivity with some of Bazzites gaming niceties 
+
 
 If you really want to use this for whatever reason, the install instructions should work, but please look at the recipe first.
-## Features:
-Theming eingines for QT and gtk
 
 # BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
 
@@ -14,9 +13,9 @@ After setup, it is recommended you update this README to describe your custom im
 ## Installation
 
 > [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+> [This is experimental](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
 
-To rebase an existing atomic Fedora installation to the latest build:
+To rebase an existing atomic Fedora installation:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
@@ -35,11 +34,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   systemctl reboot
   ```
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
 
-## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
 ## Verification
 

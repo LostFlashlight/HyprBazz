@@ -10,6 +10,7 @@ modules:
         - foot
         - nwg-displays
         - nautilus
+        - btrfs-assistant
 
         # hypr utilities
         - hyprpwcenter
