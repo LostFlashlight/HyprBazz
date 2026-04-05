@@ -29,6 +29,7 @@ modules:
         ## QT
         - qt6-qtwayland
         - qt5-qtwayland
+        - hyprland-qt-support # esential for hyprpolkitagent
         - hyprqt6engine
         - kvantum
   - type: script
