@@ -41,6 +41,7 @@ modules:
 
     scripts:
       - get_clipvault.sh
+      - get_rclone-manager.sh
 
   - type: systemd
     # this example disables automatic flatpak updates and enables a custom service unit for all users
