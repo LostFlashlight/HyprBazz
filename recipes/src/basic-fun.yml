@@ -9,7 +9,6 @@ modules:
         - hyprpolkitagent #polkit-kde
         - foot
         - nwg-displays
-        - nautilus
         - btrfs-assistant
 
         # hypr utilities
