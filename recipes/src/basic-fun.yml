@@ -10,6 +10,7 @@ modules:
         - foot
         - nwg-displays
         - btrfs-assistant
+        - rclone
 
         # hypr utilities
         - hyprpwcenter
