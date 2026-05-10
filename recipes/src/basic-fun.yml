@@ -18,17 +18,15 @@ modules:
         - hyprsysteminfo
         # Plugin support
         ## required packages
-        - cmake
-        - cpio
-        - pkg-config
-        - git
-        - g++
-        - gcc
-        - hyprland-plugins
+        #- cmake
+        #- cpio
+        #- pkg-config
+        #- git
+        #- g++
+        #- gcc
+        #- hyprland-plugins
 
         ## QT
-        - qt6-qtwayland
-        - qt5-qtwayland
         - hyprland-qt-support # esential for hyprpolkitagent
         - hyprqt6engine
         - kvantum

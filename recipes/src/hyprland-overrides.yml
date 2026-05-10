@@ -10,6 +10,8 @@ modules:
           - hyprpaper
           - hyprlock
           - hypridle
+          - qt6-qtwayland
+          - qt5-qtwayland
     repos:
       copr:
         enable:
