@@ -5,7 +5,7 @@ name: hyprbazz
 description: This is my personal OS image made for gaming and coding on hyprland.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/wayblueorg/hyprland
+base-image: ghcr.io/Lostflashlight/hyprland
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -17,7 +17,7 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - from-file: src/hyprland-overrides.yml
+  #- from-file: src/hyprland-overrides.yml not needed with my own wayblue build
   - from-file: src/basic-fun.yml
   - from-file: src/generral-preinstalls.yml
   - from-file: src/gaming.yml

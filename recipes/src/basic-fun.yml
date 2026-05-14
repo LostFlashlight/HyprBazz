@@ -16,6 +16,7 @@ modules:
         - hyprpwcenter
         - hyprshutdown
         - hyprsysteminfo
+        - hyprshot
         # Plugin support
         ## required packages
         #- cmake
