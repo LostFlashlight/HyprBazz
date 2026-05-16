@@ -37,6 +37,7 @@ modules:
       - chmod a+x /bin/update
       - chmod a+x /bin/hyprltm-net
       - systemctl --global enable ssh-agent
+      - rm /usr/share/wayland-sessions/hyprland.desktop
 
     scripts:
       - get_clipvault.sh
