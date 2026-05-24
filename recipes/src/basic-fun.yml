@@ -28,6 +28,9 @@ modules:
         #- gcc
         #- hyprland-plugins
 
+        # Theme
+        ## GTK
+        - lxappearance
         ## QT
         - hyprland-qt-support # esential for hyprpolkitagent
         - hyprqt6engine
