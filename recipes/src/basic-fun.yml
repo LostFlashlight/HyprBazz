@@ -35,6 +35,13 @@ modules:
         - hyprland-qt-support # esential for hyprpolkitagent
         - hyprqt6engine
         - kvantum
+
+        ## kde-connect
+        # needed packages:
+        - kf6-kitemmodels
+        - kf6-kirigami
+        - kde-connect
+
   - type: script
     snippets:
       #- wget -qO- https://apx.vanillaos.org/install.sh | bash
