@@ -5,7 +5,7 @@ name: hyprbazz
 description: This is my personal OS image made for gaming and coding on hyprland.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/lostflashlight/hyprland
+base-image: ghcr.io/wayblueorg/hyprland
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
