@@ -12,6 +12,7 @@ modules:
         - nwg-displays
         - btrfs-assistant
         - rclone
+        - lua
 
         # hypr utilities
         - hyprpwcenter
