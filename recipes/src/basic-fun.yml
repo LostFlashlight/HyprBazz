@@ -30,7 +30,7 @@ modules:
 
         # Theme
         ## GTK
-        - lxappearance
+        #- lxappearance
         ## QT
         - hyprland-qt-support # esential for hyprpolkitagent
         - hyprqt6engine
