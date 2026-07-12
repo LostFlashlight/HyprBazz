@@ -3,7 +3,7 @@ modules:
     repos:
       copr:
         - tofik/nwg-shell
-        - wayblueorg-hyprland
+        - craftidore/wayblueorg-hyprland
     install:
       packages:
         - uwsm
