@@ -6,7 +6,7 @@ modules:
         - craftidore/wayblueorg-hyprland
     install:
       packages:
-        - uwsm
+        #- uwsm #disbaled as it is not inclueded in the wayblue copr
         - hyprpolkitagent #polkit-kde
         - foot
         - nwg-displays
@@ -18,7 +18,7 @@ modules:
         - hyprpwcenter
         - hyprshutdown
         - hyprsysteminfo
-        - hyprshot
+        #- hyprshot #moved to script
         # Plugin support
         ## required packages
         #- cmake
@@ -49,12 +49,13 @@ modules:
       - chmod a+x /bin/update
       - chmod a+x /bin/hyprltm-net
       - systemctl --global enable ssh-agent
-      - rm /usr/share/wayland-sessions/hyprland.desktop
+      #- rm /usr/share/wayland-sessions/hyprland.desktop
 
     scripts:
       - get_clipvault.sh
       - get_hyprmon.sh
       - get_rclone-manager.sh
+      - get_hyprshot.sh
 
   - type: systemd
     # this example disables automatic flatpak updates and enables a custom service unit for all users
