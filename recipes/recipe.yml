@@ -22,4 +22,5 @@ modules:
   - from-file: src/generral-preinstalls.yml
   - from-file: src/gaming.yml
   - from-file: src/dev.yml
+  - from-file: src/theming.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
