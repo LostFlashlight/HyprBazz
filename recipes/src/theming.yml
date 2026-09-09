@@ -5,6 +5,7 @@ modules:
         - deltacopy/darkly
         - tofik/nwg-shell
     install:
-      - qt6ct
-      - nwg-look
-      - darkly
+      packages:
+        - qt6ct
+        - nwg-look
+        - darkly
