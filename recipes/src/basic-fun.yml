@@ -20,8 +20,8 @@ modules:
         - hyprsysteminfo
 
         - hyprland-qt-support # esential for hyprpolkitagent
-        - hyprqt6engine
-        - kvantum
+        #- hyprqt6engine
+        #- kvantum
 
         ## kde-connect
         # needed packages:

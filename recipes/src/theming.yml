@@ -1,0 +1,10 @@
+modules:
+  - type: dnf
+    repos:
+      copr:
+        - deltacopy/darkly
+        - tofik/nwg-shell
+    install:
+      - qt6ct
+      - nwg-look
+      - darkly
