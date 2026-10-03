@@ -1,14 +1,14 @@
 # HyprBazz
 A blend of Hyprlands productivity with some of Bazzites gaming niceties 
+like steam and gamescope beeing preinstalled
 
+Utilities for managing themes, displays and printers are also preinstalled and ready to use.
+The same applies to KDE Connect.
 
 If you really want to use this for whatever reason, the install instructions should work, but please look at the recipe first.
 
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# [![bluebuild build badge](https://github.com/lostflashlight/hyprbazz/actions/workflows/build.yml/badge.svg)](https://github.com/lostflashlight/hyprbazz/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
 
 ## Installation
 
@@ -38,11 +38,8 @@ To rebase an existing atomic Fedora installation:
 
 ## Verification
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+This images is signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/blue-build/template
+cosign verify --key cosign.pub ghcr.io/lostflashlight/hyprbazz
 ```
-
-## credit
-wifi gui is from [hyprltm/hyprltm-net](https://github.com/hyprltm/hyprltm-net)
