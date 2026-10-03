@@ -1,7 +1,13 @@
 #!/bin/bash
 
+# Fetch the latest release information from the GitHub API
+LATEST_RELEASE=$(curl -s https://api.github.com/repos/bpozdena/OneDriveGUI/releases/latest)
+
+# Extract the download URL for the AppImage
+DOWNLOAD_URL=$(echo "$LATEST_RELEASE" | grep "browser_download_url.*AppImage" | cut -d ":" -f 2,3 | tr -d "" | head -n 1)
+
 # Download the latest AppImage from the OneDriveGUI repository
-wget https://github.com/bpozdena/OneDriveGUI/releases/latest/download/OneDriveGUI-x86_64.AppImage -O /var/usr/bin/onedriveGUI
+wget $DOWNLOAD_URL -O /var/usr/bin/onedriveGUI
 
 # Make the AppImage executable
 chmod +x /var/usr/bin/onedriveGUI
