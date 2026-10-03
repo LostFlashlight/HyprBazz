@@ -13,13 +13,13 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           #- io.gitlab.librewolf-community
           - org.signal.Signal
-          - org.onlyoffice.desktopeditors
           - io.github.kolunmi.Bazaar
-
-          - org.kde.KStyle.Kvantum/x86_64/6.10
-          - org.kde.KStyle.Kvantum/x86_64/6.9
-          - org.kde.KStyle.Kvantum/x86_64/5.15-24.08
-
+          ## viewing basic filetypes
+          - org.onlyoffice.desktopeditors
+          - flathub org.gnome.Papers
+          - org.gnome.Loupe
+          - org.gnome.Decibels
+          - org.gnome.Showtime
   - type: dnf
     repos:
       #copr:
@@ -31,6 +31,7 @@ modules:
         - syncthing
         - onedrive
         - filelight
+        - kde-partitionmanager
         - lshw #needed for davinci
 
         # winboat
@@ -46,6 +47,7 @@ modules:
         - librewolf
 
         - keepassxc
+
 
     remove:
       packages:

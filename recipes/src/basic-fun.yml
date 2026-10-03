@@ -7,6 +7,7 @@ modules:
     install:
       packages:
         #- uwsm #disbaled as it is not inclueded in the wayblue copr
+        - fuse
         - hyprpolkitagent #polkit-kde
         - foot
         - nwg-displays
@@ -42,6 +43,7 @@ modules:
       - get_hyprmon.sh
       - get_rclone-manager.sh
       - get_hyprshot.sh
+      - get_onedrivegui.sh
       - set_firewall4kde-Connect.sh
 
   - type: systemd
