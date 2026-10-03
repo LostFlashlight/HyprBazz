@@ -9,6 +9,7 @@ modules:
         #- uwsm #disbaled as it is not inclueded in the wayblue copr
         - fuse
         - hyprpolkitagent #polkit-kde
+        - gnome-keyring
         - foot
         - nwg-displays
         - btrfs-assistant
