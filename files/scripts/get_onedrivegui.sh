@@ -1,13 +1,13 @@
 #!/bin/bash
 
 DOWNLOAD_URL=$(curl -fsSL https://api.github.com/repos/bpozdena/OneDriveGUI/releases/latest |
-    jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url' | head -n 1)
+jq -r '.assets[] | select(.name | endswith(".AppImage")) | .browser_download_url' | head -n 1)
 
-wget -q --show-progress "$DOWNLOAD_URL" -O /var/usr/bin/onedriveGUI
-chmod +x /var/usr/bin/onedriveGUI
+wget -q "$DOWNLOAD_URL" -O /usr/bin/onedriveGUI
+chmod +x /usr/bin/onedriveGUI
 
 # Create a .desktop file to launch the AppImage
-cat <<EOF > /var/usr/share/applications/onedrivegui.desktop
+cat <<EOF > /usr/share/applications/onedrivegui.desktop
 [Desktop Entry]
 Name=OneDriveGUI
 Exec=/var/usr/bin/onedriveGUI
