@@ -42,6 +42,7 @@ modules:
       - get_hyprmon.sh
       - get_rclone-manager.sh
       - get_hyprshot.sh
+      - set_firewall4kde-Connect.sh
 
   - type: systemd
     # this example disables automatic flatpak updates and enables a custom service unit for all users
