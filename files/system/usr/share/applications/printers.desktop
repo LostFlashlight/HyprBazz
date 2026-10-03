@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=flatpak run io.gitlab.librewolf-community http://localhost:631/admin
+Exec=xdg-open http://localhost:631/admin
 Icon=/usr/share/icons/Paper/512x512/devices/cs-printer.png
 Terminal=false
 Categories=System;TerminalEmulator;
