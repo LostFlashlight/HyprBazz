@@ -8,6 +8,7 @@ modules:
       packages:
         #- uwsm #disbaled as it is not inclueded in the wayblue copr
         - fuse
+        - fuse-devel
         - hyprpolkitagent #polkit-kde
         - gnome-keyring
         - foot
