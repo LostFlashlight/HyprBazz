@@ -14,7 +14,7 @@ modules:
         - foot
         - nwg-displays
         - btrfs-assistant
-        - rclone
+        #- rclone
         - lua
 
         # hypr utilities
@@ -43,7 +43,7 @@ modules:
     scripts:
       - get_clipvault.sh
       - get_hyprmon.sh
-      - get_rclone-manager.sh
+      #- get_rclone-manager.sh
       - get_hyprshot.sh
       - get_onedrivegui.sh
       - set_firewall4kde-Connect.sh
